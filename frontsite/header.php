@@ -11,14 +11,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="styles/frontsite/frontsite.css">
+    <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/styles/frontsite/frontsite.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 
-    <script src="scripts/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="assets/scripts/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 <!--[if lt IE 8]>

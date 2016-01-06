@@ -1,10 +1,10 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="scripts/vendor/jquery-1.11.2.min.js"></script>
-<script src="scripts/vendor/jquery.easing.min.js"></script>
+<script src="assets/scripts/vendor/jquery-1.11.2.min.js"></script>
+<script src="assets/scripts/vendor/jquery.easing.min.js"></script>
 
-<script src="scripts/vendor/bootstrap.min.js"></script>
+<script src="assets/scripts/vendor/bootstrap.min.js"></script>
 
-<script src="scripts/frontsite.js"></script>
+<script src="assets/scripts/frontsite.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
