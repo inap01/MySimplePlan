@@ -1,0 +1,100 @@
+#configuration {
+    width: 100%;
+    background-color: $green;
+    background-image: url("../../img/frontsite/pattern1.png");
+
+    #add-section {
+        margin-top: -100px;
+        z-index: 1;
+        @include box-shadow(0, 0, 8px, -1px, rgba(0, 0, 0, 0.5));
+
+        [class*='col-'] {
+            padding: 0;
+            position: relative;
+
+            img {
+                width: 100%;
+                position: relative;
+                top: 0;
+                left: 0;
+            }
+
+            .title {
+                text-transform: uppercase;
+                position: absolute;
+                top: 5px;
+                left: 10px;
+                font-size: 30px;
+                color: $white;
+                @include text-shadow(0, 0, 3px, rgba(0, 0, 0, 0.9));
+            }
+        }
+    }
+
+    .wrapper {
+        margin-top: 100px;
+        padding: 50px 0;
+        background-color: $white;
+
+        h2 {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .item {
+            border: 2px solid $grey;
+            box-shadow: none;
+            width: 100%;
+            overflow: hidden;
+            cursor: pointer;
+            @include border-radius(2px, 2px, 2px, 2px);
+
+            .top {
+                width: 100%;
+                padding: 1px;
+                position: relative;
+
+                img {
+                    width: 100%;
+                }
+
+                .icon {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    width: 85px;
+                    padding: 15px 15px 15px 17px;
+                    font-size: 35px;
+                    color: $white;
+                    background-color: $dark-grey;
+                    border: 2px solid;
+                    border-color: $white;
+                    @include border-radius(50%, 50%, 50%, 50%);
+                    @include transition(all, 0.3s, ease, 0s);
+                }
+            }
+
+            .bottom {
+                border-top: 1px solid $grey;
+                padding: 1px;
+            }
+
+            &:hover {
+                @include transition(all, 0.3s, ease, 0s);
+                border-color: #9bb70d;
+
+                .top {
+                    .icon {
+                        color: $dark-grey;
+                        border-color: $dark-grey;
+                        background-color: $green;
+                    }
+                }
+
+                .bottom {
+                    border-color: $green;
+                }
+            }
+        }
+    }
+}

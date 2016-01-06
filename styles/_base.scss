@@ -1,0 +1,108 @@
+// Sprite ============================================================================================================== //
+$sprites-layout:smart;
+//@import "../sprites/*.png";
+
+
+
+
+// Fonts definitions =================================================================================================== //
+$exo-font: 'exo', Helvetica, Arial, sans-serif;
+
+// Shadows ============================================================================================================= //
+@mixin box-shadow($x, $y, $width, $offset, $color) {
+	-webkit-box-shadow: $x $y $width $offset $color;
+	-moz-box-shadow: $x $y $width $offset $color;
+	box-shadow: $x $y $width $offset $color;
+}
+
+@mixin box-shadow-inset($x, $y, $width, $offset, $color) {
+	-webkit-box-shadow: inset $x $y $width $offset $color;
+	-moz-box-shadow: inset $x $y $width $offset $color; /**/
+	box-shadow: inset $x $y $width $offset $color;
+}
+
+@mixin box-shadow-in-and-out($x, $y, $width, $offset, $color, $x2, $y2, $width2, $offset2, $color2) {
+    -webkit-box-shadow: inset $x2 $y2 $width2 $offset2 $color2, $x $y $width $offset $color;
+    -moz-box-shadow: inset $x2 $y2 $width2 $offset2 $color2, $x $y $width $offset $color;
+    box-shadow: inset $x2 $y2 $width2 $offset2 $color2, $x $y $width $offset $color;
+}
+
+@mixin double-box-shadow-inset($x1, $y1, $width1, $offset1, $color1, $x2, $y2, $width2, $offset2, $color2) {
+	-webkit-box-shadow: inset $x1 $y1 $width1 $offset1 $color1, inset $x2 $y2 $width2 $offset2 $color2;
+	-moz-box-shadow: inset $x1 $y1 $width1 $offset1 $color1, inset $x2 $y2 $width2 $offset2 $color2;
+	box-shadow: inset $x1 $y1 $width1 $offset1 $color1, inset $x2 $y2 $width2 $offset2 $color2;
+}
+
+@mixin text-shadow($x, $y, $width, $color) {
+	-webkit-text-shadow: $x $y $width $color;
+	-moz-text-shadow: $x $y $width $color;
+	text-shadow: $x $y $width $color;
+}
+
+// Gradients =========================================================================================================== //
+// default gradient //
+@mixin gradient($first, $last) {
+	background: $first;                                                                                                                 // Old browsers
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$first), color-stop(100%,$last));                         // Chrome,Safari4+
+	background: -webkit-linear-gradient(top, $first 0%, $last 100%);                                                                    // Chrome10+,Safari5.1+
+	background: -moz-linear-gradient(top, $first 0%, $last 100%);                                                                       // FF3.6+
+	background: -ms-linear-gradient(top, $first 0%, $last 100%);                                                                        // IE10+
+	background: -o-linear-gradient(top, $first 0%, $last 100%);                                                                         // Opera 11.10+
+	background: linear-gradient(to bottom, $first 0%, $last 100%);                                                                      // W3C
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$first}', endColorstr='#{$last}',GradientType=0 );             // IE6-9
+}
+
+// 50-50 gradient
+@mixin gradient-mid($first, $last) {
+	background: $first;                                                                                                                                                     // Old browsers
+	background: -moz-linear-gradient(top, $first 0%, $first 50%, $last 50%, $last 100%);                                                                                    // FF3.6+
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$first), color-stop(50%,$first), color-stop(50%,$last), color-stop(100%,$last));              // Chrome,Safari4+
+	background: -webkit-linear-gradient(top, $first 0%, $first 50%, $last 50%, $last 100%);                                                                                 // Chrome10+,Safari5.1+
+	background: -o-linear-gradient(top, $first 0%, $first 50%, $last 50%, $last 100%);                                                                                      // Opera 11.10+
+	background: -ms-linear-gradient(top, $first 0%, $first 50%, $last 50%, $last 100%);                                                                                     // IE10+
+	background: linear-gradient(to bottom, $first 0%, $first 50%, $last 50%, $last 100%);                                                                                   // W3C
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$first}', endColorstr='#{$last}',GradientType=0 );                                                 // IE6-9
+}
+
+
+// Border Radius ======================================================================================================= //
+@mixin border-radius($topleft, $topright, $bottomright, $bottomleft) {
+	-webkit-border-radius: $topleft $topright $bottomright $bottomleft;
+	-moz-border-radius: $topleft $topright $bottomright $bottomleft;
+	border-radius: $topleft $topright $bottomright $bottomleft;
+}
+
+// Transition ========================================================================================================== //
+@mixin transition($property, $duration, $timing-function, $delay) {
+	-webkit-transition: $property $duration $timing-function $delay;
+	-moz-transition: $property $duration $timing-function $delay;
+	-ms-transition: $property $duration $timing-function $delay;
+	-o-transition: $property $duration $timing-function $delay;
+	transition: $property $duration $timing-function $delay;
+}
+
+@mixin transition-bg($property, $duration) {
+	-webkit-transition: $property $duration;
+	-moz-transition: $property $duration;
+	-ms-transition: $property $duration;
+	-o-transition: $property $duration;
+	transition: $property $duration;
+}
+
+
+// Opacity ============================================================================================================= //
+@mixin opacity($opacity, $mso) {
+	opacity: $opacity;
+	filter: alpha(opacity=$opacity);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$mso})";
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$mso});
+}
+
+//Transform ============================================================================================================ //
+@mixin rotate($deg) {
+    -moz-transform: rotate($deg);
+    -ms-transform: rotate($deg);
+    -o-transform: rotate($deg);
+    -webkit-transform: rotate($deg);
+    transform: rotate($deg);
+}
