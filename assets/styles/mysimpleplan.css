@@ -1,0 +1,33 @@
+body {
+  background-color: #e1e5e8; }
+
+#topnav.navbar {
+  background-color: #9bb70d; }
+
+#sidebar .profile {
+  background-color: #fff;
+  width: 100%;
+  border: 1px solid #dddddd;
+  margin-bottom: 10px;
+  padding: 15px; }
+  #sidebar .profile .wrapper {
+    min-height: 40px;
+    padding-left: 50px;
+    position: relative; }
+    #sidebar .profile .wrapper .user {
+      float: left;
+      width: 100%; }
+    #sidebar .profile .wrapper .edit {
+      float: left;
+      width: 100%;
+      color: #b5b5b5;
+      font-size: 12px; }
+    #sidebar .profile .wrapper img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      -webkit-border-radius: 50% 50% 50% 50%;
+      -moz-border-radius: 50% 50% 50% 50%;
+      border-radius: 50% 50% 50% 50%; }
+
+/*# sourceMappingURL=mysimpleplan.css.map */

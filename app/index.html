@@ -1,9 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="mySimplePlan">
 <head>
     <title></title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="../assets/styles/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/styles/mysimpleplan.css" rel="stylesheet" type="text/css">
+
+    <script src="../assets/scripts/vendor/jquery-1.11.2.min.js"></script>
+    <script src="../assets/scripts/vendor/bootstrap.min.js"></script>
+    <script src="../assets/scripts/vendor/angular.min.js"></script>
+    <script src="../assets/scripts/vendor/angular-route.min.js"></script>
+    <script src="../assets/scripts/vendor/angular-animate.min.js"></script>
 </head>
 <body>
+    <nav id="topnav" class="navbar navbar-default" ng-include="'shared/topnav/index.html'">
+    </nav>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3" id="sidebar">
+                <div class="profile" ng-include="'shared/profile/index.html'" ng-controller="ProfileController"></div>
+                <div class="nav" ng-include="'shared/sidebar/index.html'"></div>
+            </div>
+            <div class="col-md-9">
+                <div ng-view></div>
+            </div>
+        </div>
+    </div>
+
+<script src="app.js"></script>
+<script src="components/home/controller.js"></script>
+<script src="components/profile/controller.js"></script>
 </body>
 </html>

@@ -1,17 +1,12 @@
-/* line 4, frontsite.scss */
 html {
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
 
-/* line 9, frontsite.scss */
 body {
   width: 100%;
   height: 100%;
-  background-color: #e5e6c3;
-}
+  background-color: #e1e5e8; }
 
-/* line 15, frontsite.scss */
 .navbar {
   background: #fff;
   top: 40px;
@@ -19,149 +14,108 @@ body {
   -moz-transition: all 0.7s ease 0s;
   -ms-transition: all 0.7s ease 0s;
   -o-transition: all 0.7s ease 0s;
-  transition: all 0.7s ease 0s;
-}
-/* line 20, frontsite.scss */
-.navbar.top-nav-scrolled {
-  width: 100%;
-  top: 0;
-}
-/* line 26, frontsite.scss */
-.navbar ul.nav li {
-  border-top: 4px solid;
-  border-color: #fff;
-}
-/* line 30, frontsite.scss */
-.navbar ul.nav li.active, .navbar ul.nav li:hover {
-  background: none;
-  border-color: green;
-}
+  transition: all 0.7s ease 0s; }
+  .navbar.top-nav-scrolled {
+    width: 100%;
+    top: 0; }
+  .navbar ul.nav li {
+    border-top: 4px solid;
+    border-color: #fff; }
+    .navbar ul.nav li.active, .navbar ul.nav li:hover {
+      background: none;
+      border-color: green; }
 
-/* line 1, _landing.scss */
 #landing {
-  width: 100%;
-}
-/* line 4, _landing.scss */
-#landing #header-carousel {
-  width: 100%;
-}
-/* line 9, _landing.scss */
-#landing #header-carousel .carousel-inner .item img {
-  width: 100%;
-}
+  width: 100%; }
+  #landing #header-carousel {
+    width: 100%; }
+    #landing #header-carousel .carousel-inner .item img {
+      width: 100%; }
 
-/* line 1, _configuration.scss */
 #configuration {
   width: 100%;
   background-color: #9bb70d;
-  background-image: url("../../img/frontsite/pattern1.png");
-}
-/* line 6, _configuration.scss */
-#configuration #add-section {
-  margin-top: -100px;
-  z-index: 1;
-  -webkit-box-shadow: 0 0 8px -1px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 0 8px -1px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 8px -1px rgba(0, 0, 0, 0.5);
-}
-/* line 11, _configuration.scss */
-#configuration #add-section [class*='col-'] {
-  padding: 0;
-  position: relative;
-}
-/* line 15, _configuration.scss */
-#configuration #add-section [class*='col-'] img {
-  width: 100%;
-  position: relative;
-  top: 0;
-  left: 0;
-}
-/* line 22, _configuration.scss */
-#configuration #add-section [class*='col-'] .title {
-  text-transform: uppercase;
-  position: absolute;
-  top: 5px;
-  left: 10px;
-  font-size: 30px;
-  color: #fff;
-  -webkit-text-shadow: 0 0 3px rgba(0, 0, 0, 0.9);
-  -moz-text-shadow: 0 0 3px rgba(0, 0, 0, 0.9);
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.9);
-}
-/* line 34, _configuration.scss */
-#configuration .wrapper {
-  margin-top: 100px;
-  padding: 50px 0;
-  background-color: #fff;
-}
-/* line 39, _configuration.scss */
-#configuration .wrapper h2 {
-  width: 100%;
-  padding: 10px;
-}
-/* line 44, _configuration.scss */
-#configuration .wrapper .item {
-  border: 2px solid #b5b5b5;
-  box-shadow: none;
-  width: 100%;
-  overflow: hidden;
-  cursor: pointer;
-  -webkit-border-radius: 2px 2px 2px 2px;
-  -moz-border-radius: 2px 2px 2px 2px;
-  border-radius: 2px 2px 2px 2px;
-}
-/* line 52, _configuration.scss */
-#configuration .wrapper .item .top {
-  width: 100%;
-  padding: 1px;
-  position: relative;
-}
-/* line 57, _configuration.scss */
-#configuration .wrapper .item .top img {
-  width: 100%;
-}
-/* line 61, _configuration.scss */
-#configuration .wrapper .item .top .icon {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 85px;
-  padding: 15px 15px 15px 17px;
-  font-size: 35px;
-  color: #fff;
-  background-color: #5c5c5c;
-  border: 2px solid;
-  border-color: #fff;
-  -webkit-border-radius: 50% 50% 50% 50%;
-  -moz-border-radius: 50% 50% 50% 50%;
-  border-radius: 50% 50% 50% 50%;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -ms-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-/* line 77, _configuration.scss */
-#configuration .wrapper .item .bottom {
-  border-top: 1px solid #b5b5b5;
-  padding: 1px;
-}
-/* line 82, _configuration.scss */
-#configuration .wrapper .item:hover {
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -ms-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  border-color: #9bb70d;
-}
-/* line 87, _configuration.scss */
-#configuration .wrapper .item:hover .top .icon {
-  color: #5c5c5c;
-  border-color: #5c5c5c;
-  background-color: #9bb70d;
-}
-/* line 94, _configuration.scss */
-#configuration .wrapper .item:hover .bottom {
-  border-color: #9bb70d;
-}
+  background-image: url("../../img/frontsite/pattern1.png"); }
+  #configuration #add-section {
+    margin-top: -100px;
+    z-index: 1;
+    -webkit-box-shadow: 0 0 8px -1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 8px -1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 8px -1px rgba(0, 0, 0, 0.5); }
+    #configuration #add-section [class*='col-'] {
+      padding: 0;
+      position: relative; }
+      #configuration #add-section [class*='col-'] img {
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0; }
+      #configuration #add-section [class*='col-'] .title {
+        text-transform: uppercase;
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        font-size: 30px;
+        color: #fff;
+        -webkit-text-shadow: 0 0 3px rgba(0, 0, 0, 0.9);
+        -moz-text-shadow: 0 0 3px rgba(0, 0, 0, 0.9);
+        text-shadow: 0 0 3px rgba(0, 0, 0, 0.9); }
+  #configuration .wrapper {
+    margin-top: 100px;
+    padding: 50px 0;
+    background-color: #fff; }
+    #configuration .wrapper h2 {
+      width: 100%;
+      padding: 10px; }
+    #configuration .wrapper .item {
+      border: 2px solid #b5b5b5;
+      box-shadow: none;
+      width: 100%;
+      overflow: hidden;
+      cursor: pointer;
+      -webkit-border-radius: 2px 2px 2px 2px;
+      -moz-border-radius: 2px 2px 2px 2px;
+      border-radius: 2px 2px 2px 2px; }
+      #configuration .wrapper .item .top {
+        width: 100%;
+        padding: 1px;
+        position: relative; }
+        #configuration .wrapper .item .top img {
+          width: 100%; }
+        #configuration .wrapper .item .top .icon {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          width: 85px;
+          padding: 15px 15px 15px 17px;
+          font-size: 35px;
+          color: #fff;
+          background-color: #5c5c5c;
+          border: 2px solid;
+          border-color: #fff;
+          -webkit-border-radius: 50% 50% 50% 50%;
+          -moz-border-radius: 50% 50% 50% 50%;
+          border-radius: 50% 50% 50% 50%;
+          -webkit-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -o-transition: all 0.3s ease 0s;
+          transition: all 0.3s ease 0s; }
+      #configuration .wrapper .item .bottom {
+        border-top: 1px solid #b5b5b5;
+        padding: 1px; }
+      #configuration .wrapper .item:hover {
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+        border-color: #9bb70d; }
+        #configuration .wrapper .item:hover .top .icon {
+          color: #5c5c5c;
+          border-color: #5c5c5c;
+          background-color: #9bb70d; }
+        #configuration .wrapper .item:hover .bottom {
+          border-color: #9bb70d; }
+
+/*# sourceMappingURL=frontsite.css.map */

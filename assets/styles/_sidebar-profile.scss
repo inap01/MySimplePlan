@@ -1,0 +1,32 @@
+.profile {
+    background-color: $white;
+    width: 100%;
+    border: 1px solid $grey-border;
+    margin-bottom: 10px;
+    padding: 15px;
+
+    .wrapper {
+        min-height: 40px;
+        padding-left: 50px;
+        position: relative;
+
+        .user {
+            float: left;
+            width: 100%;
+        }
+
+        .edit {
+            float: left;
+            width: 100%;
+            color: $grey;
+            font-size: 12px;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            @include border-radius(50%, 50%, 50%, 50%);
+        }
+    }
+}
