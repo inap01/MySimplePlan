@@ -2,15 +2,15 @@
     <div id="add-section" class="container">
         <div class="row">
             <div class="col-sm-4 workout">
-                <img src="assets/img/frontsite/add-section/workout.jpg" alt="workout">
+                <img src="<?php getImage('add-section/workout.jpg'); ?>" alt="workout">
                 <p class="title">Diffrent Workouts</p>
             </div>
             <div class="col-sm-4 food">
-                <img src="assets/img/frontsite/add-section/food.jpg" alt="workout">
+                <img src="<?php getImage('add-section/food.jpg'); ?>" alt="workout">
                 <p class="title">Healthy Recipes</p>
             </div>
             <div class="col-sm-4 diet">
-                <img src="assets/img/frontsite/add-section/diet.jpg" alt="workout">
+                <img src="<?php getImage('add-section/diet.jpg'); ?>" alt="workout">
                 <p class="title">Ideal Weight</p>
             </div>
         </div>
@@ -24,7 +24,7 @@
                 <div class="col-sm-4">
                     <div class="item text-center">
                         <div class="top">
-                            <img src="assets/img/frontsite/configuration/male.jpg">
+                            <img src="<?php getImage('configuration/male.jpg'); ?>">
                             <div class="icon">
                                 <i class="fa fa-male"></i>
                             </div>
@@ -37,7 +37,7 @@
                 <div class="col-sm-4">
                     <div class="item text-center">
                         <div class="top">
-                            <img src="assets/img/frontsite/configuration/female.jpg">
+                            <img src="<?php getImage('configuration/female.jpg'); ?>">
                             <div class="icon">
                                 <i class="fa fa-female"></i>
                             </div>
@@ -50,7 +50,7 @@
                 <div class="col-sm-4">
                     <div class="item text-center">
                         <div class="top">
-                            <img src="assets/img/frontsite/configuration/teen.jpg">
+                            <img src="<?php getImage('configuration/teen.jpg'); ?>">
                             <div class="icon">
                                 <i class="fa fa-child"></i>
                             </div>

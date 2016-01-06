@@ -1,5 +1,5 @@
 <?php
-require "frontsite/functions.php";
+require "app/components/frontsite/functions.php";
 
 getTemplate("header");
 getTemplate("navi");

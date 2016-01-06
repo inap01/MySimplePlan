@@ -1,5 +1,5 @@
 <?php
 
-include('frontsite/index.php');
+include('app/components/frontsite/index.php');
 
 ?>
