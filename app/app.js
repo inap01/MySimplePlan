@@ -8,6 +8,10 @@
                 controller: 'HomeController',
                 templateUrl: 'components/home/index.html'
             })
+            .when('/goals', {
+                controller: 'GoalController',
+                templateUrl: 'components/goals/index.html'
+            })
             .otherwise({ redirectTo: '/' });
     });
 
