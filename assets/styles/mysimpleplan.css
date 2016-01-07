@@ -3,15 +3,19 @@ body {
 
 #topnav.navbar {
   background-color: #9bb70d; }
-  #topnav.navbar li a:hover {
+  #topnav.navbar li a:hover, #topnav.navbar li a:focus {
     background-color: #a3c10e; }
-  #topnav.navbar img {
-    margin: 0 5px 0 5px;
-    -webkit-border-radius: 50% 50% 50% 50%;
-    -moz-border-radius: 50% 50% 50% 50%;
-    border-radius: 50% 50% 50% 50%; }
+  #topnav.navbar li a.dropdown-toggle.user {
+    padding: 5px 15px; }
+    #topnav.navbar li a.dropdown-toggle.user img {
+      height: 35px;
+      width: 35px;
+      margin-right: 5px;
+      -webkit-border-radius: 50% 50% 50% 50%;
+      -moz-border-radius: 50% 50% 50% 50%;
+      border-radius: 50% 50% 50% 50%; }
 #topnav .brand {
-  color: #ffffff;
+  color: #fff;
   font-weight: 800;
   text-decoration: none; }
 

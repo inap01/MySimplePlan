@@ -1,21 +1,31 @@
 &.navbar {
-    background-color: #9bb70d;
+    background-color: $green;
 
     li{
-      a:hover{
-        background-color: #a3c10e;
-      }
-    }
+        a {
+            &:hover,
+            &:focus {
+                background-color: $green-hover;
+            }
 
-  img {
-    margin:0 5px 0 5px;
-    @include border-radius(50%, 50%, 50%, 50%);
-  }
+            &.dropdown-toggle.user {
+                padding: 5px 15px;
+
+
+                img {
+                    height: 35px;
+                    width: 35px;
+                    margin-right: 5px;
+                    @include border-radius(50%, 50%, 50%, 50%);
+                }
+            }
+        }
+    }
 }
 
 .brand
 {
-  color:#ffffff;
-  font-weight: 800;
-  text-decoration: none;
+    color: $white;
+    font-weight: 800;
+    text-decoration: none;
 }
