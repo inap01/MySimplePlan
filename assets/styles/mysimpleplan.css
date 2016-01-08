@@ -54,7 +54,7 @@ body {
     padding: 15px;
     border: 1px solid #dddddd; }
     #home .wrapper .overview h3 {
-      color: #48d720;
+      color: #43ac6a;
       font-weight: 800;
       font-size: 2.8em;
       padding: 0;
@@ -93,5 +93,25 @@ body {
     border: 1px solid #dddddd; }
     #home .wrapper .post .avatar {
       margin: auto 0; }
+  #home .wrapper .recipe-header {
+    background-color: #9bb70d;
+    min-height: 20px;
+    padding: 10px 15px;
+    color: #fff;
+    font-weight: 300; }
+  #home .wrapper .recipe {
+    background-color: #fff;
+    min-height: 100px;
+    height: 150px;
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid #dddddd; }
+    #home .wrapper .recipe img {
+      height: 100px;
+      width: 100%;
+      background-color: #fff;
+      border: 1px solid #dddddd;
+      padding: 2px;
+      overflow: hidden; }
 
 /*# sourceMappingURL=mysimpleplan.css.map */
