@@ -46,18 +46,52 @@ body {
       border-radius: 50% 50% 50% 50%; }
 
 #home .wrapper {
-  width: 100%;
-  border: 1px solid #dddddd; }
-#home .overview {
-  background-color: #fff;
-  min-height: 100px;
-  margin-bottom: 10px;
-  padding: 15px; }
-#home .overview-header {
-  background-color: #9bb70d;
-  min-height: 40px;
-  padding: 15px;
-  color: #fff;
-  font-weight: 500; }
+  width: 100%; }
+  #home .wrapper .overview {
+    background-color: #fff;
+    min-height: 100px;
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid #dddddd; }
+    #home .wrapper .overview h3 {
+      color: #48d720;
+      font-weight: 800;
+      font-size: 2.8em;
+      padding: 0;
+      margin: 0; }
+    #home .wrapper .overview hr {
+      margin: 10px 0; }
+    #home .wrapper .overview .progress {
+      padding: 0;
+      margin: 0; }
+    #home .wrapper .overview .row {
+      margin: 0;
+      padding: 0; }
+    #home .wrapper .overview button {
+      -webkit-border-radius: 5px 5px 5px 5px;
+      -moz-border-radius: 5px 5px 5px 5px;
+      border-radius: 5px 5px 5px 5px; }
+    #home .wrapper .overview span {
+      color: #b5b5b5; }
+  #home .wrapper .overview-header {
+    background-color: #9bb70d;
+    min-height: 40px;
+    padding: 15px;
+    color: #fff;
+    font-weight: 500; }
+  #home .wrapper .post-header {
+    background-color: #b5b5b5;
+    min-height: 20px;
+    padding: 10px 15px;
+    color: #fff;
+    font-weight: 300; }
+  #home .wrapper .post {
+    background-color: #fff;
+    min-height: 100px;
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid #dddddd; }
+    #home .wrapper .post .avatar {
+      margin: auto 0; }
 
 /*# sourceMappingURL=mysimpleplan.css.map */
