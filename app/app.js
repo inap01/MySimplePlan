@@ -12,6 +12,10 @@
                 controller: 'GoalController',
                 templateUrl: 'components/goals/index.html'
             })
+            .when('/diary', {
+                controller: 'DiaryController',
+                templateUrl: 'components/diary/index.html'
+            })
             .otherwise({ redirectTo: '/' });
     });
 
