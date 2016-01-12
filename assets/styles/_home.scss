@@ -1,104 +1,103 @@
 .wrapper{
     width:100%;
 
-    .overview{
-        background-color: $white;
-        min-height: 100px;
-        margin-bottom: 10px;
-        padding: 15px;
-        border: 1px solid $grey-border;
-
-        h3{
-            color: $success;
-            font-weight: 800;
-            font-size: 2.8em;
-            padding: 0;
-            margin: 0;
+    .home-box {
+        .overview-header,
+        .post-header,
+        .recipe-header {
+            background-color: $grey;
+            min-height: 40px;
+            padding: 15px;
+            color: $white;
+            font-weight: 500;
         }
 
-        hr{
-            margin:10px 0;
-        }
-
-        .progress{
-            padding: 0;
-            margin: 0;
-        }
-
-        .row{
-            margin: 0;
-            padding:0;
+        .overview,
+        .post,
+        .recipe {
+            background-color: $white;
+            min-height: 100px;
+            margin-bottom: 10px;
+            padding: 15px;
+            border: 1px solid $grey-border;
         }
 
 
+        // OVERVIEW ====================================================================================================
 
-        button{
-            @include border-radius(5px, 5px, 5px, 5px);
+        .overview{
+            h3{
+                color: $success;
+                font-weight: 800;
+                font-size: 2.8em;
+                padding: 0;
+                margin: 0;
+            }
+
+            hr{
+                margin:10px 0;
+            }
+
+            .progress{
+                padding: 0;
+                margin: 0;
+            }
+
+            .row{
+                margin: 0;
+                padding:0;
+            }
+
+
+
+            button{
+                @include border-radius(5px, 5px, 5px, 5px);
+            }
+
+            span{
+                color: $grey;
+            }
+
         }
 
-        span{
-            color: $grey;
+        .overview-header{
+            background-color: $green;
         }
 
+
+
+        // POSTS =======================================================================================================
+
+        .post-header{
+            font-weight: 300;
+        }
+
+        .post{
+
+            .avatar{
+                margin:auto 0;
+            }
+        }
+
+
+        // RECIPES =====================================================================================================
+
+        .recipe-header{
+            background-color: $green;
+            font-weight: 300;
+        }
+
+        .recipe{
+            [class*="col-"] {
+                img{
+                    background-color:$white;
+                    border:1px solid $grey-border;
+                    padding:2px;
+                    width: 100%;
+                    overflow: hidden;
+                }
+            }
+        }
     }
-
-    .overview-header{
-        background-color:$green;
-        min-height: 40px;
-        padding:15px;
-        color:$white;
-        font-weight: 500;
-    }
-
-
-
-    .post-header{
-        background-color:$grey;
-        min-height: 20px;
-        padding:10px 15px;
-        color:$white;
-        font-weight: 300;
-    }
-
-    .post{
-
-        background-color: $white;
-        min-height: 100px;
-        margin-bottom: 10px;
-        padding: 15px;
-        border: 1px solid $grey-border;
-
-        .avatar{
-            margin:auto 0;
-        }
-    }
-
-    .recipe-header{
-        background-color:$green;
-        min-height: 20px;
-        padding:10px 15px;
-        color:$white;
-        font-weight: 300;
-    }
-
-    .recipe{
-        background-color: $white;
-        min-height: 100px;
-        height: 150px;
-        margin-bottom: 10px;
-        padding: 15px;
-        border: 1px solid $grey-border;
-
-        img{
-            height:100px;
-            width: 100px;
-            background-color:$white;
-            border:1px solid $grey-border;
-            padding:2px;
-            overflow:hidden;
-        }
-
-    }
-
 }
 

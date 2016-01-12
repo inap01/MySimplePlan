@@ -33,7 +33,7 @@
     }
 
     .delete{
-        background-color:$danger;
+        background-color: $danger;
         @include border-radius(50%,50%,50%,50%);
         height: 25px;
         width: 25px;

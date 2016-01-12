@@ -15,7 +15,7 @@
 # lib_dir = project_path + '../../system/lib/'
 
 http_path = "/"
-css_dir = "styles"
-sass_dir = "styles"
-images_dir = "img"
-javascripts_dir = "scripts"
+css_dir = "assets/styles"
+sass_dir = "assets/styles"
+images_dir = "assets/img"
+javascripts_dir = "assets/scripts"

@@ -1,157 +1,204 @@
+/* line 4, mysimpleplan.scss */
 body {
-  background-color: #e1e5e8; }
+  background-color: #e1e5e8;
+}
 
+/* line 1, _topnav.scss */
 #topnav.navbar {
-  background-color: #9bb70d; }
-  #topnav.navbar li a:hover, #topnav.navbar li a:focus {
-    background-color: #a3c10e; }
-  #topnav.navbar li a.dropdown-toggle.user {
-    padding: 5px 15px; }
-    #topnav.navbar li a.dropdown-toggle.user img {
-      height: 35px;
-      width: 35px;
-      margin-right: 5px;
-      -webkit-border-radius: 50% 50% 50% 50%;
-      -moz-border-radius: 50% 50% 50% 50%;
-      border-radius: 50% 50% 50% 50%; }
+  background-color: #9bb70d;
+}
+/* line 6, _topnav.scss */
+#topnav.navbar li a:hover, #topnav.navbar li a:focus {
+  background-color: #a3c10e;
+}
+/* line 11, _topnav.scss */
+#topnav.navbar li a.dropdown-toggle.user {
+  padding: 5px 15px;
+}
+/* line 15, _topnav.scss */
+#topnav.navbar li a.dropdown-toggle.user img {
+  height: 35px;
+  width: 35px;
+  margin-right: 5px;
+  -webkit-border-radius: 50% 50% 50% 50%;
+  -moz-border-radius: 50% 50% 50% 50%;
+  border-radius: 50% 50% 50% 50%;
+}
+/* line 26, _topnav.scss */
 #topnav .brand {
   color: #fff;
   font-weight: 800;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
+/* line 1, _sidebar-profile.scss */
 #sidebar .profile {
   background-color: #fff;
   width: 100%;
   border: 1px solid #dddddd;
   margin-bottom: 10px;
-  padding: 15px; }
-  #sidebar .profile .wrapper {
-    min-height: 40px;
-    padding-left: 50px;
-    position: relative; }
-    #sidebar .profile .wrapper .user {
-      float: left;
-      width: 100%; }
-    #sidebar .profile .wrapper .edit {
-      float: left;
-      width: 100%;
-      color: #b5b5b5;
-      font-size: 12px; }
-    #sidebar .profile .wrapper img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      -webkit-border-radius: 50% 50% 50% 50%;
-      -moz-border-radius: 50% 50% 50% 50%;
-      border-radius: 50% 50% 50% 50%; }
+  padding: 15px;
+}
+/* line 8, _sidebar-profile.scss */
+#sidebar .profile .wrapper {
+  min-height: 40px;
+  padding-left: 50px;
+  position: relative;
+}
+/* line 13, _sidebar-profile.scss */
+#sidebar .profile .wrapper .user {
+  float: left;
+  width: 100%;
+}
+/* line 18, _sidebar-profile.scss */
+#sidebar .profile .wrapper .edit {
+  float: left;
+  width: 100%;
+  color: #b5b5b5;
+  font-size: 12px;
+}
+/* line 25, _sidebar-profile.scss */
+#sidebar .profile .wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-border-radius: 50% 50% 50% 50%;
+  -moz-border-radius: 50% 50% 50% 50%;
+  border-radius: 50% 50% 50% 50%;
+}
 
+/* line 1, _home.scss */
 #home .wrapper {
-  width: 100%; }
-  #home .wrapper .overview {
-    background-color: #fff;
-    min-height: 100px;
-    margin-bottom: 10px;
-    padding: 15px;
-    border: 1px solid #dddddd; }
-    #home .wrapper .overview h3 {
-      color: #43ac6a;
-      font-weight: 800;
-      font-size: 2.8em;
-      padding: 0;
-      margin: 0; }
-    #home .wrapper .overview hr {
-      margin: 10px 0; }
-    #home .wrapper .overview .progress {
-      padding: 0;
-      margin: 0; }
-    #home .wrapper .overview .row {
-      margin: 0;
-      padding: 0; }
-    #home .wrapper .overview button {
-      -webkit-border-radius: 5px 5px 5px 5px;
-      -moz-border-radius: 5px 5px 5px 5px;
-      border-radius: 5px 5px 5px 5px; }
-    #home .wrapper .overview span {
-      color: #b5b5b5; }
-  #home .wrapper .overview-header {
-    background-color: #9bb70d;
-    min-height: 40px;
-    padding: 15px;
-    color: #fff;
-    font-weight: 500; }
-  #home .wrapper .post-header {
-    background-color: #b5b5b5;
-    min-height: 20px;
-    padding: 10px 15px;
-    color: #fff;
-    font-weight: 300; }
-  #home .wrapper .post {
-    background-color: #fff;
-    min-height: 100px;
-    margin-bottom: 10px;
-    padding: 15px;
-    border: 1px solid #dddddd; }
-    #home .wrapper .post .avatar {
-      margin: auto 0; }
-  #home .wrapper .recipe-header {
-    background-color: #9bb70d;
-    min-height: 20px;
-    padding: 10px 15px;
-    color: #fff;
-    font-weight: 300; }
-  #home .wrapper .recipe {
-    background-color: #fff;
-    min-height: 100px;
-    height: 150px;
-    margin-bottom: 10px;
-    padding: 15px;
-    border: 1px solid #dddddd; }
-    #home .wrapper .recipe img {
-      height: 100px;
-      width: 100px;
-      background-color: #fff;
-      border: 1px solid #dddddd;
-      padding: 2px;
-      overflow: hidden; }
+  width: 100%;
+}
+/* line 5, _home.scss */
+#home .wrapper .home-box .overview-header,
+#home .wrapper .home-box .post-header,
+#home .wrapper .home-box .recipe-header {
+  background-color: #b5b5b5;
+  min-height: 40px;
+  padding: 15px;
+  color: #fff;
+  font-weight: 500;
+}
+/* line 15, _home.scss */
+#home .wrapper .home-box .overview,
+#home .wrapper .home-box .post,
+#home .wrapper .home-box .recipe {
+  background-color: #fff;
+  min-height: 100px;
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid #dddddd;
+}
+/* line 29, _home.scss */
+#home .wrapper .home-box .overview h3 {
+  color: #43ac6a;
+  font-weight: 800;
+  font-size: 2.8em;
+  padding: 0;
+  margin: 0;
+}
+/* line 37, _home.scss */
+#home .wrapper .home-box .overview hr {
+  margin: 10px 0;
+}
+/* line 41, _home.scss */
+#home .wrapper .home-box .overview .progress {
+  padding: 0;
+  margin: 0;
+}
+/* line 46, _home.scss */
+#home .wrapper .home-box .overview .row {
+  margin: 0;
+  padding: 0;
+}
+/* line 53, _home.scss */
+#home .wrapper .home-box .overview button {
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+/* line 57, _home.scss */
+#home .wrapper .home-box .overview span {
+  color: #b5b5b5;
+}
+/* line 63, _home.scss */
+#home .wrapper .home-box .overview-header {
+  background-color: #9bb70d;
+}
+/* line 71, _home.scss */
+#home .wrapper .home-box .post-header {
+  font-weight: 300;
+}
+/* line 77, _home.scss */
+#home .wrapper .home-box .post .avatar {
+  margin: auto 0;
+}
+/* line 85, _home.scss */
+#home .wrapper .home-box .recipe-header {
+  background-color: #9bb70d;
+  font-weight: 300;
+}
+/* line 92, _home.scss */
+#home .wrapper .home-box .recipe [class*="col-"] img {
+  background-color: #fff;
+  border: 1px solid #dddddd;
+  padding: 2px;
+  width: 100%;
+  overflow: hidden;
+}
 
+/* line 1, _diary.scss */
 #diary .wrapper {
   width: 100%;
   background-color: #fff;
   min-height: 100px;
   margin-bottom: 10px;
   padding: 15px;
-  border: 1px solid #dddddd; }
-  #diary .wrapper .calorie {
-    margin: 45px 0;
-    font-size: 1.3em;
-    font-weight: 500; }
-  #diary .wrapper .date {
-    font-size: 1.2em;
-    font-weight: 800;
-    color: #1b1b1b;
-    margin-right: 15px; }
-  #diary .wrapper .weekday {
-    font-size: 0.9em;
-    font-weight: 300;
-    color: #1b1b1b; }
-  #diary .wrapper .edit {
-    background-color: #E99002;
-    -webkit-border-radius: 50% 50% 50% 50%;
-    -moz-border-radius: 50% 50% 50% 50%;
-    border-radius: 50% 50% 50% 50%;
-    height: 25px;
-    width: 25px; }
-  #diary .wrapper .delete {
-    background-color: #F04124;
-    -webkit-border-radius: 50% 50% 50% 50%;
-    -moz-border-radius: 50% 50% 50% 50%;
-    border-radius: 50% 50% 50% 50%;
-    height: 25px;
-    width: 25px; }
-  #diary .wrapper .food-add {
-    width: 100%;
-    margin: 15px 0;
-    color: #fff;
-    background-color: #9bb70d; }
-
-/*# sourceMappingURL=mysimpleplan.css.map */
+  border: 1px solid #dddddd;
+}
+/* line 9, _diary.scss */
+#diary .wrapper .calorie {
+  margin: 45px 0;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+/* line 15, _diary.scss */
+#diary .wrapper .date {
+  font-size: 1.2em;
+  font-weight: 800;
+  color: #1b1b1b;
+  margin-right: 15px;
+}
+/* line 22, _diary.scss */
+#diary .wrapper .weekday {
+  font-size: 0.9em;
+  font-weight: 300;
+  color: #1b1b1b;
+}
+/* line 28, _diary.scss */
+#diary .wrapper .edit {
+  background-color: #E99002;
+  -webkit-border-radius: 50% 50% 50% 50%;
+  -moz-border-radius: 50% 50% 50% 50%;
+  border-radius: 50% 50% 50% 50%;
+  height: 25px;
+  width: 25px;
+}
+/* line 35, _diary.scss */
+#diary .wrapper .delete {
+  background-color: #F04124;
+  -webkit-border-radius: 50% 50% 50% 50%;
+  -moz-border-radius: 50% 50% 50% 50%;
+  border-radius: 50% 50% 50% 50%;
+  height: 25px;
+  width: 25px;
+}
+/* line 42, _diary.scss */
+#diary .wrapper .food-add {
+  width: 100%;
+  margin: 15px 0;
+  color: #fff;
+  background-color: #9bb70d;
+}
