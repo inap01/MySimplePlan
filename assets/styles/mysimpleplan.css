@@ -108,33 +108,23 @@ body {
   margin-bottom: 10px;
   padding: 15px;
   border: 1px solid #dddddd; }
-  #diary .wrapper .calorie {
-    margin: 45px 0;
-    font-size: 1.3em;
-    font-weight: 500; }
-  #diary .wrapper .date {
+  #diary .wrapper .title .date {
     font-size: 1.2em;
     font-weight: 800;
     color: #1b1b1b;
     margin-right: 15px; }
-  #diary .wrapper .weekday {
+  #diary .wrapper .title .weekday {
     font-size: 0.9em;
     font-weight: 300;
     color: #1b1b1b; }
-  #diary .wrapper .edit {
-    background-color: #E99002;
-    -webkit-border-radius: 50% 50% 50% 50%;
-    -moz-border-radius: 50% 50% 50% 50%;
-    border-radius: 50% 50% 50% 50%;
-    height: 25px;
-    width: 25px; }
-  #diary .wrapper .delete {
-    background-color: #F04124;
-    -webkit-border-radius: 50% 50% 50% 50%;
-    -moz-border-radius: 50% 50% 50% 50%;
-    border-radius: 50% 50% 50% 50%;
-    height: 25px;
-    width: 25px; }
+  #diary .wrapper .calorie {
+    margin: 45px 0;
+    font-size: 1.3em;
+    font-weight: 500; }
+  #diary .wrapper .item {
+    margin-bottom: 5px; }
+    #diary .wrapper .item [class*="col-"]:nth-child(1), #diary .wrapper .item [class*="col-"]:nth-child(2) {
+      padding: 3px 0; }
   #diary .wrapper .food-add {
     width: 100%;
     margin: 15px 0;

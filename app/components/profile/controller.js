@@ -11,7 +11,8 @@
         $scope.lastName = "Paski";
         $scope.email = "example@mail.com";
         $scope.emailShow = 0;
-        $scope.timeFormat = 24;
+        $scope.dateFormat = "";
+        $scope.timeFormat = "";
         $scope.firstDayOfTheWeek = 'monday';
 
         init();
@@ -23,6 +24,7 @@
                     $scope.lastName = response[0]['lastName'];
                     $scope.email = response[0]['email'];
                     $scope.emailShow = response[0]['emailShow'];
+                    $scope.dateFormat = response[0]['dateFormat'];
                     $scope.timeFormat = response[0]['timeFormat'];
                     $scope.firstDayOfTheWeek = response[0]['firstDayOfTheWeek'];
                 });

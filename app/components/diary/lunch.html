@@ -2,68 +2,21 @@
     <div class="col-md-3">
         <div class="container">
             <div class="row">
-                Mittagessen
+                Lunch
             </div>
             <div class="row">
-                <span class="calorie">1402 kcal</span>
+                <span class="calorie">{{ calories.lunch }} cal</span>
             </div>
         </div>
     </div>
+
     <div class="col-md-9">
-        <div class="row">
-            <div class="col-md-4">Reis</div>
-            <div class="col-md-2">125g</div>
-            <div class="col-md-3">
-                <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
-                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">Möhren</div>
-            <div class="col-md-2">100g</div>
-            <div class="col-md-3">
-                <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
-                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">Paprika</div>
-            <div class="col-md-2">200g</div>
-            <div class="col-md-3">
-                <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
-                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">Zuckerschoten</div>
-            <div class="col-md-2">200g</div>
-            <div class="col-md-3">
-                <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
-                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">Sahne</div>
-            <div class="col-md-2">150ml</div>
-            <div class="col-md-3">
-                <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
-                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">Sojasoße</div>
-            <div class="col-md-2">50ml</div>
-            <div class="col-md-3">
-                <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
-                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">Erdnussbutter</div>
-            <div class="col-md-2">30g</div>
-            <div class="col-md-3">
-                <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
-                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
+        <div class="row item" ng-repeat="item in lunch">
+            <div class="col-md-4">{{ item.name }}</div>
+            <div class="col-md-3">{{ item.value }}</div>
+            <div class="col-md-5">
+                <button class="btn btn-warning btn-xs"><i class="fa fa-pencil"></i></button>
+                <button class="btn btn-danger btn-xs"><i class="fa fa-trash"></i></button>
             </div>
         </div>
     </div>
