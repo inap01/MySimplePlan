@@ -88,6 +88,9 @@
         }
 
         .recipe{
+
+            overflow: hidden;
+
             [class*="col-"] {
                 img{
                     background-color:$white;

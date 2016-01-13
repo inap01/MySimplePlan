@@ -92,12 +92,14 @@ body {
   #home .wrapper .home-box .recipe-header {
     background-color: #9bb70d;
     font-weight: 300; }
-  #home .wrapper .home-box .recipe [class*="col-"] img {
-    background-color: #fff;
-    border: 1px solid #dddddd;
-    padding: 2px;
-    width: 100%;
+  #home .wrapper .home-box .recipe {
     overflow: hidden; }
+    #home .wrapper .home-box .recipe [class*="col-"] img {
+      background-color: #fff;
+      border: 1px solid #dddddd;
+      padding: 2px;
+      width: 100%;
+      overflow: hidden; }
 
 #diary .wrapper {
   width: 100%;
@@ -138,6 +140,8 @@ body {
     margin: 15px 0;
     color: #fff;
     background-color: #9bb70d; }
+  #diary .wrapper .food-add:hover {
+    background-color: #a3c10e; }
 
 #profile .profile {
   background-color: #fff;
