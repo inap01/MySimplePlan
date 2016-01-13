@@ -1,0 +1,69 @@
+.profile {
+    background-color: $white;
+    overflow: hidden;
+    padding: 15px;
+    border: 1px solid $grey-border;
+
+    h2 {
+        margin-top: 5px;
+    }
+
+    hr {
+        border-color: $grey-border;
+    }
+
+    .form-horizontal {
+        .control-label {
+            padding-top: 5px;
+            font-size: 14px;
+        }
+
+        input {
+            height: 32px;
+            font-size: 14px;
+
+            &.form-control {
+                padding: 6px 12px;
+            }
+        }
+
+        .radio,
+        .checkbox {
+            input {
+                height: 16px;
+            }
+        }
+
+        a {
+            position: relative;
+
+            img {
+                height: 85px;
+                width: 85px;
+                @include border-radius(50%, 50%, 50%, 50%);
+            }
+
+            i.fa {
+                position: absolute;
+                height: 45px;
+                width: 45px;
+                padding: 5px 5px 5px 8px;
+                left: 21px;
+                top: 0px;
+                font-size: 35px;
+                background-color: $green;
+                color: #ffffff;
+                @include border-radius(50%, 50%, 50%, 50%);
+                @include opacity(0, 0);
+                @include transition(all, 0.2s, ease, 0s);
+            }
+
+            &:hover {
+                i.fa {
+                    top: -9px;
+                    @include opacity(1, 1);
+                }
+            }
+        }
+    }
+}

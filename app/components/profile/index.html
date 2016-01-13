@@ -1,0 +1,96 @@
+<div id="profile" class="row">
+    <div class="col-lg-12">
+        <div class="profile">
+            <h2>User Profile</h2>
+            <hr>
+
+            <h3>Basic Info</h3>
+            <div class="basic form-horizontal">
+                <div class="form-group">
+                    <label for="first-name" class="col-sm-3 control-label">Profile Photo</label>
+                    <div class="col-sm-7">
+                        <a href="" ng-click="">
+                            <img src="https://d2d69lvc7tiwu6.cloudfront.net/assets/user/default_avatar_male.jpg">
+                            <i class="fa fa-pencil"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="first-name" class="col-sm-3 control-label">First Name*</label>
+                    <div class="col-sm-7">
+                        <input type="text" class="form-control" id="first-name" placeholder="First Name" value="{{ firstName }}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="last-name" class="col-sm-3 control-label">Last Name*</label>
+                    <div class="col-sm-7">
+                        <input type="text" class="form-control" id="last-name" placeholder="Last Name" value="{{ lastName }}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="col-sm-3 control-label">Email Address*</label>
+                    <div class="col-sm-7">
+                        <input type="email" class="form-control" id="email" placeholder="Email" value="{{ email }}">
+                        <span id="helpBlock" class="help-block">This email is your login username, and it is required.</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="col-sm-3 control-label">Show Email</label>
+                    <div class="col-sm-7">
+                        <div class="checkbox">
+                            <label><input type="checkbox"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <h3>Localization</h3>
+            <div class="localization form-horizontal">
+                <div class="form-group">
+                    <label for="time-format" class="col-sm-3 control-label">Time Format</label>
+                    <div class="col-sm-7">
+                        <div id="time-format" class="radio">
+                            <label>
+                                <input type="radio" name="time-format" id="time-format-12" value="12" checked>
+                                12 hour time (2:30 PM)
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="time-format" id="time-format-24" value="24">
+                                24 hour time (14:30)
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="time-format" class="col-sm-3 control-label">First Day of the Week</label>
+                    <div class="col-sm-7">
+                        <div id="first-day" class="radio">
+                            <label>
+                                <input type="radio" name="first-day" id="first-day-monday" value="monday" checked>
+                                Monday
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="first-day" id="first-day-sunday" value="sunday">
+                                Sunday
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-7">
+                        <button type="submit" class="btn btn-default">Save Changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

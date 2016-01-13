@@ -9,6 +9,7 @@
     function ProfileController($scope, $http) {
         $scope.firstName = "Peter";
         $scope.lastName = "Paski";
+        $scope.email = "example@mail.com";
 
         init();
 
@@ -17,6 +18,7 @@
                 .success(function(response) {
                     $scope.firstName = response[0]['firstName'];
                     $scope.lastName = response[0]['lastName'];
+                    $scope.email = response[0]['email'];
                 });
         }
     }
