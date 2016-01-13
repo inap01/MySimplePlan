@@ -1,86 +1,82 @@
-<div id="home" class="row">
-    <div class="col-md-9">
-        <div class="wrapper">
-            <div class="home-box">
-                <div class="overview-header">Übersicht</div>
-                <div class="overview">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <h3 ng-style="calorie_style">{{calorie_open}}</h3>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="row">
-                                <div class="progress"  ng-mouseover="increment()" data-toggle="tooltip" data-placement="top" title="calorie_now">
-                                    <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: {{calorie_percent}}%">
-                                        <span class="sr-only">Already {{calorie_percent }} % done !</span>
-                                    </div>
+<div id="home">
+    <div class="wrapper">
+        <div class="home-box">
+            <div class="overview-header">Übersicht</div>
+            <div class="overview">
+                <div class="row">
+                    <div class="col-md-2">
+                        <h3 ng-style="calorie_style">{{calorie_open}}</h3>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="progress"  ng-mouseover="increment()" data-toggle="tooltip" data-placement="top" title="calorie_now">
+                                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: {{calorie_percent}}%">
+                                    <span class="sr-only">Already {{calorie_percent }} % done !</span>
                                 </div>
-                                <hr/>
                             </div>
-                            <div class="row">
-                                <span>{{calorie_max}} - {{calorie_now }} = {{calorie_open}}</span>
-                            </div>
+                            <hr/>
+                        </div>
+                        <div class="row">
+                            <span>{{calorie_max}} - {{calorie_now }} = {{calorie_open}}</span>
                         </div>
                     </div>
-                    <hr/>
-                    <div class="row">
-                        <a href="#/diary"><button class="btn btn-default">Mahlzeit hinzufügen</button></a>
-                    </div>
+                </div>
+                <hr/>
+                <div class="row">
+                    <a href="#/diary"><button class="btn btn-default">Mahlzeit hinzufügen</button></a>
                 </div>
             </div>
+        </div>
 
-            <div class="home-box">
-                <div class="post-header">
-                    Training beendet
+        <div class="home-box">
+            <div class="post-header">
+                Training beendet
+            </div>
+            <div class="post">
+                <img width="40" height="40" class="avatar" title="Peter Panski" src="https://d2d69lvc7tiwu6.cloudfront.net/assets/user/default_avatar_male.jpg" alt="Peter Panski">
+            </div>
+        </div>
+
+        <div class="home-box">
+            <div class="post-header">
+                Training beendet
+            </div>
+            <div class="post">
+                <img width="40" height="40" class="avatar" title="Peter Panski" src="https://d2d69lvc7tiwu6.cloudfront.net/assets/user/default_avatar_male.jpg" alt="Peter Panski">
+            </div>
+        </div>
+
+        <div class="home-box">
+            <div class="recipe-header">
+                Rezept Ideen für dich!
+            </div>
+            <div class="recipe">
+                <div class="col-md-4">
+                    <img  src="../assets/img/rezepte/1738698_1758137024409154_289919985_n.jpg">
                 </div>
-                <div class="post">
-                    <img width="40" height="40" class="avatar" title="Peter Panski" src="https://d2d69lvc7tiwu6.cloudfront.net/assets/user/default_avatar_male.jpg" alt="Peter Panski">
+                <div class="col-md-4">
+                    <img  src="../assets/img/rezepte/10655024_1033254963402987_289028985_n.jpg">
+                </div>
+                <div class="col-md-4">
+                    <img  src="../assets/img/rezepte/12357627_1667151193502538_760184001_n.jpg">
                 </div>
             </div>
+        </div>
 
-            <div class="home-box">
-                <div class="post-header">
-                    Training beendet
-                </div>
-                <div class="post">
-                    <img width="40" height="40" class="avatar" title="Peter Panski" src="https://d2d69lvc7tiwu6.cloudfront.net/assets/user/default_avatar_male.jpg" alt="Peter Panski">
-                </div>
+        <div class="home-box">
+            <div class="post-header">
+                Training beendet
+            </div>
+            <div class="post">
+                <img width="40" height="40" class="avatar" title="Peter Panski" src="https://d2d69lvc7tiwu6.cloudfront.net/assets/user/default_avatar_male.jpg" alt="Peter Panski">
             </div>
 
-            <div class="home-box">
-                <div class="recipe-header">
-                    Rezept Ideen für dich!
-                </div>
-                <div class="recipe">
-                    <div class="col-md-4">
-                        <img  src="../assets/img/rezepte/1738698_1758137024409154_289919985_n.jpg">
-                    </div>
-                    <div class="col-md-4">
-                        <img  src="../assets/img/rezepte/10655024_1033254963402987_289028985_n.jpg">
-                    </div>
-                    <div class="col-md-4">
-                        <img  src="../assets/img/rezepte/12357627_1667151193502538_760184001_n.jpg">
-                    </div>
-                </div>
+            <div class="post-header">
+                Training beendet
             </div>
-
-            <div class="home-box">
-                <div class="post-header">
-                    Training beendet
-                </div>
-                <div class="post">
-                    <img width="40" height="40" class="avatar" title="Peter Panski" src="https://d2d69lvc7tiwu6.cloudfront.net/assets/user/default_avatar_male.jpg" alt="Peter Panski">
-                </div>
-
-                <div class="post-header">
-                    Training beendet
-                </div>
-                <div class="post">
-                    <img width="40" height="40" class="avatar" title="Peter Panski" src="https://d2d69lvc7tiwu6.cloudfront.net/assets/user/default_avatar_male.jpg" alt="Peter Panski">
-                </div>
+            <div class="post">
+                <img width="40" height="40" class="avatar" title="Peter Panski" src="https://d2d69lvc7tiwu6.cloudfront.net/assets/user/default_avatar_male.jpg" alt="Peter Panski">
             </div>
-
         </div>
     </div>
-    <div class="col-md-3"></div>
 </div>
