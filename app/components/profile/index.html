@@ -38,7 +38,7 @@
                     <label for="email" class="col-sm-3 control-label">Show Email</label>
                     <div class="col-sm-7">
                         <div class="checkbox">
-                            <label><input type="checkbox"></label>
+                            <label><input type="checkbox" ng-model="emailShow" ng-true-value="'1'" ng-false-value="'0'"></label>
                         </div>
                     </div>
                 </div>
@@ -52,13 +52,13 @@
                     <div class="col-sm-7">
                         <div id="time-format" class="radio">
                             <label>
-                                <input type="radio" name="time-format" id="time-format-12" value="12" checked>
+                                <input type="radio" name="time-format" id="time-format-12" value="12" ng-model="timeFormat">
                                 12 hour time (2:30 PM)
                             </label>
                         </div>
                         <div class="radio">
                             <label>
-                                <input type="radio" name="time-format" id="time-format-24" value="24">
+                                <input type="radio" name="time-format" id="time-format-24" value="24" ng-model="timeFormat">
                                 24 hour time (14:30)
                             </label>
                         </div>
@@ -69,13 +69,13 @@
                     <div class="col-sm-7">
                         <div id="first-day" class="radio">
                             <label>
-                                <input type="radio" name="first-day" id="first-day-monday" value="monday" checked>
+                                <input type="radio" name="first-day" id="first-day-monday" value="monday" ng-model="firstDayOfTheWeek">
                                 Monday
                             </label>
                         </div>
                         <div class="radio">
                             <label>
-                                <input type="radio" name="first-day" id="first-day-sunday" value="sunday">
+                                <input type="radio" name="first-day" id="first-day-sunday" value="sunday" ng-model="firstDayOfTheWeek">
                                 Sunday
                             </label>
                         </div>
