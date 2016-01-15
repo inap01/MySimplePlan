@@ -8,11 +8,7 @@
     DiaryController.$inject = ['$scope', '$http'];
     function DiaryController($scope, $http) {
         $scope.date = new Date();
-        $scope.breakfast = [
-            {name:'Haferflocken', value: '200g', calories: 100},
-            {name:'Milch', value: '500ml', calories: 120},
-            {name:'Banane', value: '1 Stück', calories: 96}
-        ];
+        $scope.breakfast = {};
         $scope.lunch = $scope.breakfast;
         $scope.dinner = $scope.breakfast;
         $scope.calories = {};
@@ -20,7 +16,21 @@
         init();
 
         function init() {
+            getBreakfast();
+
             calcCalories();
+        }
+
+        function getBreakfast() {
+            var data = JSON.stringify({
+                id: 1,
+                meal: 'breakfast'
+            });
+
+            $http.post("../api/diary/get.php", data)
+                .success(function(response) {
+                    $scope.breakfast = response;
+                });
         }
 
         function calcCalories() {

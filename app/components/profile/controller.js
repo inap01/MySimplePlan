@@ -18,7 +18,9 @@
         init();
 
         function init() {
-            $http.get("../api/user/get.php?id=1")
+            var data = JSON.stringify({id: 1});
+
+            $http.post("../api/user/get.php", data)
                 .success(function(response) {
                     $scope.firstName = response[0]['firstName'];
                     $scope.lastName = response[0]['lastName'];
