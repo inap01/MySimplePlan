@@ -28,12 +28,17 @@
     }
 
     .item {
-        margin-bottom: 5px;
+        padding: 5px 0;
+        border-top: 1px solid $grey-border;
+
+        &:first-of-type {
+            border-top: none;
+        }
 
         [class*="col-"] {
             &:nth-child(1),
             &:nth-child(2) {
-                padding: 3px 0;
+                padding: 3px 5px;
             }
         }
     }

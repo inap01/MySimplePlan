@@ -17,65 +17,48 @@
 
         function init() {
             getBreakfast();
+            getLunch();
+            getDinner();
         }
 
         function getBreakfast() {
-            var data = JSON.stringify({
-                id: 1,
-                meal: 'breakfast'
-            });
+            var data = JSON.stringify({id: 1, meal: 'breakfast'});
 
             $http.post("../api/diary/get.php", data)
                 .success(function(response) {
                     $scope.breakfast = response;
-                    calcCaloriesBreakfast();
+                    $scope.calories.breakfast = 0;
+
+                    angular.forEach($scope.breakfast, function(item) {
+                        $scope.calories.breakfast += parseInt(item.calories);
+                    });
                 });
         }
         function getLunch() {
-            var data = JSON.stringify({
-                id: 1,
-                meal: 'lunch'
-            });
+            var data = JSON.stringify({id: 1, meal: 'lunch'});
 
             $http.post("../api/diary/get.php", data)
                 .success(function(response) {
-                    $scope.breakfast = response;
-                    calcCaloriesLunch();
+                    $scope.lunch = response;
+                    $scope.calories.lunch = 0;
+
+                    angular.forEach($scope.lunch, function(item) {
+                        $scope.calories.lunch += parseInt(item.calories);
+                    });
                 });
         }
         function getDinner() {
-            var data = JSON.stringify({
-                id: 1,
-                meal: 'dinner'
-            });
+            var data = JSON.stringify({id: 1, meal: 'dinner'});
 
             $http.post("../api/diary/get.php", data)
                 .success(function(response) {
-                    $scope.breakfast = response;
-                    calcCaloriesDinner();
+                    $scope.dinner = response;
+                    $scope.calories.dinner = 0;
+
+                    angular.forEach($scope.dinner, function(item) {
+                        $scope.calories.dinner += parseInt(item.calories);
+                    });
                 });
-        }
-
-        function calcCaloriesBreakfast() {
-            $scope.calories.breakfast = 0;
-
-            angular.forEach($scope.breakfast, function(item) {
-                $scope.calories.breakfast += parseInt(item.calories);
-            });
-        }
-        function calcCaloriesLunch() {
-            $scope.calories.lunch = 0;
-
-            angular.forEach($scope.lunch, function(item) {
-                $scope.calories.lunch += parseInt(item.calories);
-            });
-        }
-        function calcCaloriesDinner() {
-            $scope.calories.dinner = 0;
-
-            angular.forEach($scope.dinner, function(item) {
-                $scope.calories.dinner += parseInt(item.calories);
-            });
         }
 
         $scope.datePrev = function() {

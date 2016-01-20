@@ -122,9 +122,12 @@ body {
     font-size: 1.3em;
     font-weight: 500; }
   #diary .wrapper .item {
-    margin-bottom: 5px; }
+    padding: 5px 0;
+    border-top: 1px solid #dddddd; }
+    #diary .wrapper .item:first-of-type {
+      border-top: none; }
     #diary .wrapper .item [class*="col-"]:nth-child(1), #diary .wrapper .item [class*="col-"]:nth-child(2) {
-      padding: 3px 0; }
+      padding: 3px 5px; }
   #diary .wrapper .food-add {
     width: 100%;
     margin: 15px 0;

@@ -12,9 +12,13 @@
 
     <div class="col-md-9">
         <div class="row item" ng-repeat="item in lunch">
-            <div class="col-md-4">{{ item.name }}</div>
-            <div class="col-md-3">{{ item.value }}</div>
-            <div class="col-md-5">
+            <div class="col-md-6">{{ item.name }}</div>
+            <div class="col-md-3">
+                {{ item.value }}
+                <span ng-if="item.value_type == 'value'">{{ item.type }}</span>
+                <span ng-if="item.value_type == 'piece'"> piece(s)</span>
+            </div>
+            <div class="col-md-3">
                 <button class="btn btn-warning btn-xs"><i class="fa fa-pencil"></i></button>
                 <button class="btn btn-danger btn-xs"><i class="fa fa-trash"></i></button>
             </div>
